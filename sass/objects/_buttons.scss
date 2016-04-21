@@ -1,0 +1,31 @@
+.o-btn {
+	@include antialias;
+	@include hover;
+	@include border-radius;
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: $blue;
+	line-height: 50px;
+	text: {
+		align: center;
+		transform: uppercase;
+	}
+	font: {
+		family: $yanone;
+		size: em(24);
+		weight: $bold;
+	}
+	color: white;
+	cursor: pointer;
+	
+	&:hover {
+		.no-mobile & {
+			background-color: darken( $blue, 10% );
+		}
+	}
+	
+	&:active {
+		background-color: darken($blue, 15%);
+	}
+}

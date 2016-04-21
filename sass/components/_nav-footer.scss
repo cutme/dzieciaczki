@@ -1,0 +1,36 @@
+.c-nav-footer {
+
+	li {
+		display: inline-block;
+		margin-right: 40px;
+
+		a {			
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	
+	@media screen and ( max-width: 768px ) {
+		li {
+			float: left;
+			
+			&:nth-child(2n+1) {
+				clear: left;
+			}
+			
+			a {
+				padding: 5px 0;
+				font-size: em(14);
+			}
+		}
+	}
+
+	@media screen and ( max-width: 480px ) {
+		li {
+			a {
+				font-size: em(12);
+			}
+		}
+	}
+}

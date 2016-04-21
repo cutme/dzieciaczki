@@ -1,0 +1,87 @@
+.o-form {
+	margin-bottom: 30px;
+	text-align: center;
+
+	input, textarea {
+		@include border-radius;
+		@include hover;
+		background-color: $blue--brightest;
+		
+		&:focus {
+			background-color: darken($blue--brightest, 5%);
+		}
+	}
+
+	input {
+		height: 40px;
+		padding: 0 20px;
+		text-align: center;		
+	}
+	
+	label {
+		white-space: nowrap;
+	}
+
+	textarea {
+		height: 325px;
+		padding: 20px;
+	}
+	
+	&__fields {
+		margin-bottom: 20px;
+		
+		&--left {
+			float: left;
+		}	
+		
+		&--right {
+			float: right;
+		}
+	}
+	
+	&__item {
+		@include clear;
+		display: block;
+		margin-bottom: 20px;
+	}
+	
+	&__lead {
+		@include clear;
+		display: block;
+		margin-bottom: 5px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		font-size: em(14);
+		color: $blue;
+	}
+	
+	&__half {
+		float: left;
+		overflow: hidden;
+
+		.label {
+			float: left;
+			line-height: 40px;
+			font-size: em(14);
+			color: $black-brightest;
+		}
+		
+		input {
+			float: left;
+		}
+
+		&--right {
+			float: right;
+		}
+	}
+	
+	&__required {
+		color: rgba(red, .7);
+	}
+	
+	.has-error {
+		input, textarea {
+			border: 1px solid rgba(red, .7);
+		}
+	}
+}

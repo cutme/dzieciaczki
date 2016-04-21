@@ -1,0 +1,64 @@
+.c-nav-primary {
+	position: absolute;
+	top: 60px;
+	left: 415px;
+	z-index: 5;
+	
+	&:hover {
+			a {
+				@include opacity(.8);
+			}
+		}
+
+	li {
+		display: inline-block;
+
+		a {
+			@include animfix;
+			display: block;
+			width: 177px; height: 94px;
+			background: {
+				image: url(../img/cloud.svg);
+				repeat: no-repeat;
+				position: center;
+			}
+			margin-right: 5px;
+			padding-top: 40px;
+			text: {
+				align: center;
+				transform: uppercase;
+			}
+			font: {
+				family: $yanone;
+				size: em(24);
+			}
+			color: $blue;
+			
+			&:hover {
+				@include opacity(1);
+				@include transform(scale(1.05));
+			}
+		}
+	}
+	
+	@media screen and ( max-width: $tablet_landscape ) {
+		left: grid(415, 1024);
+	}
+	
+	@media screen and ( max-width: 640px ) {
+		left: 0;
+		top: 130px;
+		width: 100%;
+		text-align: center;
+		
+		
+		li {
+			a {
+				width: 150px;
+				font-size: em(20);
+			}
+		}
+
+	}
+
+}

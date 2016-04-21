@@ -1,0 +1,59 @@
+[class^="icon-"], [class*=" icon-"] {
+	@include icomoon;
+}
+
+.bottom-buffer {
+	margin-bottom: 60px;
+}
+
+.u-align-center {
+	text-align: center;
+}
+
+.u-pos-y {
+	@include scut-center-transform(y);
+}
+
+.u-smooth {
+	@include antialias;
+}
+
+.u-bb {
+	border-bottom: 1px solid $blue--brightest;
+	padding-bottom: 20px;
+	
+	.o-regular & {
+		margin-bottom: 30px;
+		padding-bottom: 5px;
+	}
+	
+	.c-details & {
+	    padding-bottom: 15px;
+	    margin-bottom: 20px;
+		border-color: $blue--brighter;
+	}
+}
+
+.u-doublemargin {
+	margin-bottom: 60px;
+}
+
+.u-nomargin {
+	margin-bottom: 0;
+}
+
+.safari {
+	* {
+		-webkit-backface-visibility: hidden;
+		-webkit-transform-style: preserve-3d;
+	}
+}
+
+.picker__header select {
+	line-height: 1 !important;
+}
+
+.color-blue {
+	color: $blue;
+}
+

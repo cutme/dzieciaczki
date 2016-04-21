@@ -1,0 +1,21 @@
+.o-header {
+	@include antialias;
+	margin-bottom: 1em;
+	color: $blue;
+	
+	h1, h2 {
+		font: {
+			family: $yanone;
+			size: em(48);
+			weight: $bold;
+		}
+	}
+	
+	h3 {
+		line-height: 1;
+		font: {
+			size: em(36);
+			weight: $bold;
+		}
+	}
+}

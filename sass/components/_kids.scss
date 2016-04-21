@@ -1,0 +1,93 @@
+.c-kids {
+	&__item {
+		@include hover;
+		@include transition-duration(100ms);
+		float: left;
+		width: grid(180, 810);
+		margin: {
+			right: grid(30, 810);
+			bottom: 30px;
+		}
+		text-align: center;
+		
+		&:nth-child(4n) {
+			margin-right: 0;
+		}
+		
+		&:hover {
+			.no-mobile & {
+				@include transform(translate(0, -5px));
+			}
+		}
+		
+		&--boy {
+			color: $blue--brighter;
+		}
+
+		&--girl {
+			color: $pink;
+		}		
+	}
+	
+	&__photo {
+		@include animfix;
+		@include border-radius( 20px );
+		@include hover;
+		object-fit: cover;
+		margin-bottom: 15px;
+		vertical-align: middle;
+		border: {
+			width: 4px;
+			style: solid;
+			color: inherit;
+		}
+		background-color: $pink;
+		display: block;
+		width: 100%;
+		margin: 0 auto 15px auto;
+		overflow: hidden;
+	}
+	
+	&__info {
+		display: block;
+		font-size: em(14);
+		
+		.c-kids__item--boy & {
+			color: $blue;
+		}
+		
+		.c-kids__item--girl & {
+			color: $pink--darker;
+		}
+
+		&--name {
+			margin-bottom: 5px;
+			font: {
+				size: em(18);
+				weight: $bold;
+			}
+		}
+	}
+	
+	.o-media {
+		object-fit: cover;
+	}
+
+	@media screen and ( max-width: 640px ) {
+		max-width: 390px;
+		margin: 0 auto;
+		
+		&__item {
+			width: grid(180, 390);
+			margin-right: grid(30, 390);
+			
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+
+			&:nth-child(2n+1) {
+				clear: left;
+			}
+		}
+	}
+}

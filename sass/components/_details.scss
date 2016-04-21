@@ -1,0 +1,50 @@
+.c-details {
+	@include border-top-left-radius(40px);
+	@include border-bottom-left-radius(40px);
+	float: left;
+	position: relative;
+	width: 100%;
+	background-color: $gray-lighter;
+	margin-bottom: 30px;
+	
+	&__toys {
+		position: absolute;
+		right: 0; bottom: 0; z-index: 10;
+		width: grid(300, 810); 
+	}
+
+	&__content {
+		float: left;
+		position: relative; z-index: 5;
+		width: grid(390, $content_width);
+		padding: 30px grid(30, 810);
+	}
+
+	&__image {
+		@include border-radius( 40px );
+		float: left;
+		width: grid(390, 810);
+		border: 5px solid $blue;
+		overflow: hidden;
+	}
+	
+	@media screen and ( max-width: 640px ) {
+		float: none;
+		background-color: transparent;
+
+		&__image {
+			float: none;
+			margin: 0 auto;
+		}
+		
+		&__content {
+			float: none;
+			width: 100%;
+			padding: {
+				left: 0;
+				right: 0;
+			}
+			text-align: center;
+		}
+	}
+}
