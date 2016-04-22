@@ -1,7 +1,7 @@
 .o-header {
 	@include antialias;
 	margin-bottom: 1em;
-	color: $blue;
+	color: inherit;
 	
 	h1, h2 {
 		font: {

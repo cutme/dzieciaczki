@@ -1,6 +1,7 @@
 .c-form-search {
 	margin-bottom: 40px;
-	
+	color: $blue;
+
 	.o-form__fields {
 		border-bottom: 1px solid $blue--brightest;
 	}
@@ -14,7 +15,7 @@
 
 		.label {
 			width: grid(50, 125);
-			color: $blue;
+			color: inherit;
 			
 			@media screen and ( max-width: 767px ) {
 				width: grid(50, 300);

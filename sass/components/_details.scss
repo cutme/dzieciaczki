@@ -7,6 +7,18 @@
 	background-color: $gray-lighter;
 	margin-bottom: 30px;
 	
+	&--boy {
+		color: $blue;
+		
+		.c-details__image {
+			border-color: $blue--brighter;
+		}
+	}
+	
+	&--girl {
+		color: $pink;
+	}
+	
 	&__toys {
 		position: absolute;
 		right: 0; bottom: 0; z-index: 10;
@@ -24,7 +36,7 @@
 		@include border-radius( 40px );
 		float: left;
 		width: grid(390, 810);
-		border: 5px solid $blue;
+		border: 5px solid;
 		overflow: hidden;
 	}
 	

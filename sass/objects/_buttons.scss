@@ -20,9 +20,7 @@
 	cursor: pointer;
 	
 	&:hover {
-		.no-mobile & {
-			background-color: darken( $blue, 10% );
-		}
+		background-color: darken( $blue, 10% );
 	}
 	
 	&:active {
