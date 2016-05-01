@@ -3,7 +3,7 @@ span.ui-radio {
 	@include hover;
 	position: relative;
 	display: inline-block;
-	width: 14px; height: 14px;
+	width: 20px; height: 20px;
 	background-color: white;
 	margin-right: 5px;
 	cursor: pointer;
@@ -11,21 +11,12 @@ span.ui-radio {
 
 span.ui-checkbox {
 	@include border-radius(4px);
-	@include icons;
 	position: relative; top: 2px;
 	background-color: white;
 	border: 1px solid #aaa;
 	text-align: center;
 	line-height: 14px;
 	overflow: hidden;
-
-	&:after {
-		@include hover;
-		display: none;
-		content: "\e908";
-		font-size: 11px;
-		color: white;
-	}
 }
 
 span.ui-radio {
@@ -49,12 +40,8 @@ span.ui-helper-hidden {
 
 span.ui-checkbox-state-checked,
 span.ui-checkbox-state-checked-hover {
-	background-color: black;
-	border: none;
-	
-	&:after {
-		display: block;
-	}
+	background-color: $blue;
+	border-color: $blue;
 }
 
 span.ui-radio-state-checked-disabled {

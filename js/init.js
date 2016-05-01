@@ -4,7 +4,13 @@ head.js('https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js', fun
 				.load('https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/compressed/themes/default.date.css')
 				.js('https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/compressed/picker.js')
 				.js('https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/compressed/picker.date.js');
-				
+		}
+		
+		if ($('input[type="checkbox"], input[type="radio"]').length > 0) {
+			head.js('https://code.jquery.com/ui/1.10.2/jquery-ui.js');
+			head.js('js/ui.checkbox.js', function() {
+				$('input[type="checkbox"]').checkBox();
+			});
 		}
 	})
 	.js('js/main.js');
