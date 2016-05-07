@@ -108,7 +108,12 @@ jQuery(function($) {
 
 			function checkField(o) {				
 				if ($(o).val() == '') {
-					$(o).parent().addClass(errorClass);
+				
+					if ($(o).attr('type') == 'file') {
+						$(o).parents('.js-upload').addClass(errorClass);	
+					} else {
+						$(o).parent().addClass(errorClass);
+					}
 					return false;
 				}
 				return true;
@@ -116,7 +121,7 @@ jQuery(function($) {
 			var validateStart = function(o) {
 				error = 0;
 				el.find('.has-error').removeClass(errorClass);
-				$('[type=text], [type=tel], [type=password], [type=date]', o).each(function() {
+				$('[type=text], [type=tel], [type=password], [type=date], [type=file]', o).each(function() {
 					if ( $(this).prop('required') === true ) {
 						check = checkField(this);
 						if (check === false) {
@@ -182,7 +187,6 @@ editorContent = tinyMCE.get('tinyeditor').getContent();
 				submit.on('click', function(e) {
 					e.preventDefault();
 					is_error = validateStart(_t);
-					console.log('e: ' +is_error);
 					if (is_error === 1) {
 						goToTarget(_t);
 					} else {
