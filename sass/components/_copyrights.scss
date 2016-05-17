@@ -1,6 +1,12 @@
 .c-copyrights {
 	right: 20px;
 	
+	small {
+		display: block;
+		margin-bottom: 5px;
+		text-align: right;
+	}
+	
 	@media screen and ( max-width: 480px ) {
 		font-size: em(12);
 	}

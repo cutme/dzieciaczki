@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<title>Witaj na świecie!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta charset="utf-8" />
+	<meta name="robots" content="noindex, nofollow" />
+	<link rel="stylesheet" href="style/main.css" />
+</head>
+
+<body>
+
+	<div class="c-top">
+		<div class="o-wrap">
+			<a href="index.html" class="c-logo">
+				<img src="img/logo.svg" alt="Witaj świecie" class="o-media" />
+				<img src="img/stork.svg" alt="" class="o-media stork" />
+			</a>
+
+			<nav class="c-nav-primary">
+				<ul>
+					<li>
+						<a href="strona-tekstowa.html">nasze pociechy</a>
+					</li>
+					
+					<li>
+						<a href="formularz.html">dodaj wpis</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+
+	<div class="o-wrap">
+		<div class="o-content">
+			
+			<div class="o-regular u-doublemargin">
+				<div class="o-header u-bb">
+					<h1>Powiadomienia</h1>
+				</div>
+				
+									
+				<form action="/" class="o-form" method="post" enctype="multipart/form-data">						
+					<fieldset class="o-form__fields o-form__fields--left">
+
+						<label class="o-form__item">
+							<input type="email" name="Email" placeholder="Twój adres e-mail" required />
+							
+						</label>
+						
+						<button type="submit" class="o-btn submit">Zapisz się</button>
+					</fieldset>
+				</form>
+
+			</div>			
+		</div><!-- /content -->
+
+		<aside class="o-sidebar">					
+			<form action="#" class="o-form c-form-search">
+				<div class="o-header u-align-center">
+					<h2>Wyszukaj wpis</h2>
+				</div>
+				
+				<fieldset class="o-form__fields">
+					<label class="o-form__item">
+						<span class="o-form__lead">Imię i nazwisko</span>
+						<input type="text" />
+					</label>
+					
+					<label class="o-form__item">
+						<span class="o-form__lead">Miejscowość</span>
+						<input type="text" />
+					</label>
+					
+					<div class="o-form__item">
+						<span class="o-form__lead">Data urodzenia</span>
+						
+						<span class="o-form__half">
+							<span class="label">Od</span>
+							<input type="text" />
+						</span>
+						
+						<span class="o-form__half o-form__half--right">
+							<span class="label">Do</span>
+							<input type="text" />
+						</span>
+					</div>
+				</fieldset>
+				
+				<fieldset class="o-form__submit">
+					<button type="submit" class="o-btn">szukaj</button>
+				</fieldset>
+			</form>
+			
+			<div class="o-baner">
+				<a href="#">
+					<img src="img/_ban_160.jpg" alt="" class="o-media" />
+				</a>
+			</div>
+		</aside>
+	</div><!-- /wrap -->
+		
+
+	<footer class="o-footer">
+		<div class="o-wrap">
+			<nav class="c-nav-footer u-pos-y">
+				<ul>
+					<li>
+						<a href="#">Link 1</a>
+					</li>
+					
+					<li>
+						<a href="#">Link 2</a>
+					</li>
+					
+					<li>
+						<a href="#">Link 3</a>
+					</li>
+					
+					<li>
+						<a href="#">Link 4</a>
+					</li>
+				</ul>
+			</nav>
+			
+			<p class="c-copyrights u-pos-y">
+				<small>copyright 2016</small>
+			</p>
+		</div>
+	</footer>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.min.js" data-headjs-load="js/init.js"></script>
+
+<script type="text/javascript">WebFontConfig={google:{families:['Lato:400,700,400italic:latin,latin-ext']}};(function(){var wf=document.createElement('script');wf.src='https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';wf.type='text/javascript';wf.async='true';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(wf,s);})();</script>
+
+</body>
+</html>

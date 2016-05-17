@@ -27,6 +27,10 @@
 		padding: 20px;
 	}
 	
+	&__field {
+		width: 60%;
+	}
+	
 	&__fields {
 		margin-bottom: 20px;
 		
@@ -43,6 +47,14 @@
 		@include clear;
 		display: block;
 		margin-bottom: 20px;
+	}
+	
+	&__label {
+		width: 40%;
+		padding-right: 20px;
+		line-height: 38px;
+		text-align: right;
+		color: $blue;
 	}
 	
 	&__lead {
@@ -92,6 +104,10 @@
 		.c-upload__input {
 			border: 1px solid rgba(red, .7);
 		}
+	}
+	
+	@include input-placeholder {
+		color: $blue;
 	}
 	
 }
