@@ -47,6 +47,12 @@
 		@include clear;
 		display: block;
 		margin-bottom: 20px;
+		
+		@media screen and ( max-width: 640px ) {
+			.c-form-labeloutside & {
+				margin-bottom: 10px;
+			}
+		}
 	}
 	
 	&__label {
