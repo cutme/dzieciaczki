@@ -85,6 +85,16 @@
 		&--right {
 			float: right;
 		}
+		
+		@media screen and ( max-width: 640px ) {
+			.c-form-labeloutside & {
+				float: none;
+				display: block;
+				width: 100%;
+				text-align: left;
+			}
+		}
+		
 	}
 	
 	&__required {

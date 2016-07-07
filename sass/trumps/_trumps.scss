@@ -6,6 +6,10 @@
 	margin-bottom: 60px;
 }
 
+.bottom-buffer--half {
+	margin-bottom: 30px;
+}
+
 .u-align-center {
 	text-align: center;
 }
@@ -47,6 +51,17 @@
 	white-space: normal !important;
 }
 
+
+.picker__header select {
+	line-height: 1 !important;
+}
+
+.picker__select--month,
+.picker__select--year {
+	padding: 0 0.5em !important;
+}
+
+
 .safari {
 	* {
 		-webkit-backface-visibility: hidden;
@@ -54,9 +69,6 @@
 	}
 }
 
-.picker__header select {
-	line-height: 1 !important;
-}
 
 .color-blue {
 	color: $blue;

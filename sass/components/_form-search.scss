@@ -25,6 +25,8 @@
 	
 		input {
 			width: grid(75, 125);
+			font-size: 11px;
+			padding: 0 2px;
 			
 			@media screen and ( max-width: 767px ) {
 				width: grid(250, 300);
